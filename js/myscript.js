@@ -1,4 +1,4 @@
 $(document).ready(function() {
-    $("h2").addclass("underline");//underline all <h2> elements
-    $("ul").addclass("border"); //adds a border to all lists 
+    $("h2").addClass("underline");//underline all <h2> elements
+    $("ul").addClass("border"); //adds a border to all lists 
 });
