@@ -7,10 +7,10 @@ document.write("<div id=jsdiv><h6>I m h6 heading inside id div, my div border is
 var num = 16; //number
 var name = "Ashur"; // string
 var flag = true; //boolean
+document.write("<br><hr>")
+document.write("<div id=jsdiv><h6> I am number sixteen inside variable produced inside div = " + num + " : see I am cool</h6></div>");
 
-document.write("<div id=jsdiv><h6> I am number sixteen inside variable produced inside div = " + num + " :see I am cool</h6></div>");
-
-alert(name + " " + num + " " + flag); // sending all three values in 1 alert
+//alert(name + " " + num + " " + flag); // sending all three values in 1 alert
 
 /* Operators in Java script
     Arithmetic oprators
@@ -56,3 +56,31 @@ alert(name + " " + num + " " + flag); // sending all three values in 1 alert
 6. type o operators
 
 */
+document.write("<H1>Practising if else statements </h1>");
+    /*
+        Q.1. Find weather number is even pr odd
+        Q.2. Find the number if its positive or negative
+        Q.3. Find if the number is positve and even
+    */
+
+var x = 5;
+    if (x%2==0){
+
+        document.write("even number" + "<br>");
+
+    }
+    else 
+    {
+        document.write("odd number" + "<br>");
+    }
+
+    var x = -5;
+    if (x>0){
+
+        document.write("positve number" + "<br>");
+
+    }
+    else 
+    {
+        document.write("negative" + "<br>");
+    }
