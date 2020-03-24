@@ -132,9 +132,45 @@ var x = 7;
         break;
            
     }
-    document.write("<H1>Practising loop statements </h1>");
+    document.write("<H1>Practising for loop statements </h1>");
 
     //syntax: for (init; conditions; increment/decrement){  }
     for ( var x=1; x<=10; x++){
-        document.write("<th class=mytable><h2> 5 x " + x + " = " + (5*x) + "<h2></th></tr></table>");
+        document.write("<h2> 5 x " + x + " = " + (5*x) + "<h2>");
     }
+
+     for (var x=2; x<=10; x+=2){
+        document.write("<h2>" + x  + "<h2>");
+    }
+    document.write("<H1>Practising while loop statements </h1>");
+    var x = 1;
+    while(x<=10){
+            document.write("<H6>" + x + "</h6>");
+            x = x+2;
+    }
+    document.write("<H1>Practising do while loop statements </h1>");
+    var x = 7;
+    do{
+        document.write("<H2>" + "ashur" + "</h2>");
+        x--;
+    }while(x > 5);
+     document.write("<H1>Learning Functions </h1>");
+
+     function addingNumbers(a , b)
+     {
+       
+        total = a+b;
+         document.write("<h6> The total is " + total + "</h6>");
+
+     }
+     addingNumbers(12, 12);
+
+      function returningNumbers(a , b)
+     {
+       
+        total = a+b;
+      return total;
+
+     }
+     var output = addingNumbers(5, 5);
+    
