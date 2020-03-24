@@ -74,7 +74,7 @@ var x = 5;
         document.write("odd number" + "<br>");
     }
 
-    var x = -5;
+var x = -5;
     if (x>0){
 
         document.write("positve number" + "<br>");
@@ -83,4 +83,58 @@ var x = 5;
     else 
     {
         document.write("negative" + "<br>");
+    }
+
+var x = 7;
+    if (x = 5 || X > 6)
+    {
+        document.write("OR || logical operator is used inside if statement");
+    }
+
+    var y = 8;
+    if (y = 8 && y > 5)
+    {
+        document.write("<BR>" + "and && logical operator is used inside if statement");
+    }
+
+    document.write("<H1>Practising switch case </h1>");
+    document.write("Using switch system to determine the value od x to see what day of week it is");
+
+    var day = 4;
+
+  
+     
+      switch(day)
+    {
+        case 1:
+        document.write("<h6>Today is Sunday</h6>");
+        break;
+        case 2:
+        document.write("<h6>Today is Monday</h6>");
+        break;
+        case 3:
+        document.write("<h6>Today is Tuesday</h6>") ;
+        break;
+        case 4:
+        document.write("<h6>Today is Wednesday</h6>");
+        break;
+        case 5:
+        document.write("<h6>Today is Thursday</h6>");
+        break;
+        case 6:
+        document.write("<h6>Today is Friday</h6>");
+        break;
+        case 7:
+        document.write("<h6>Today is Saturday</h6>");
+        break;
+        default:
+        document.write("<h6>Wrong input</h6>");
+        break;
+           
+    }
+    document.write("<H1>Practising loop statements </h1>");
+
+    //syntax: for (init; conditions; increment/decrement){  }
+    for ( var x=1; x<=10; x++){
+        document.write("<th class=mytable><h2> 5 x " + x + " = " + (5*x) + "<h2></th></tr></table>");
     }

@@ -1,7 +1,10 @@
 body {
-    background-color: sandybrown;
+    background-color: beige;
 }
 
 #jsdiv{
     border: 2px solid #000;
+}
+table, th, td, .mytable {
+  border: 1px solid black;
 }
