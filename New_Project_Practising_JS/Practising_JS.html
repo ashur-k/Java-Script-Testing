@@ -13,7 +13,7 @@
     <!--Div for printing value from input text-->
 <div id="div1" class="div_border">
     <h3>Printing value from input text</h3><hr>
-    <input type="text" id="text1" placeholder="user-name">
+    <input type="text" id="text1" placeholder="user-name"><br>
     <button id="btn1" onclick="fn1()">Click me</button>
    <br>
 </div>
@@ -38,6 +38,7 @@
 <!--getElementByTagName method in JavaScript-->
 
 </section>
+<section class="section_class">
 <div id="div3" class="div_border">
     <h3>getElementByTagName method in JavaScript</h3><hr>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis.</p>
@@ -47,6 +48,36 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis.</p>       
         <button id="btn4" onclick="changeStyling()">Click me</button>
     </div>
+
+    <div id="div4" class="div_border">
+    <h3>getElementByClassName method in JavaScript</h3><hr>
+        <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis.</p>
+        <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis.</p>
+        <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis.</p>       
+        <button id="btn5" onclick="changeStyling1()">Click me</button>
+    </div>
+    </section>
+<section class="section_class">
+    <div id="div5" class="div_border">
+    <h3>Change Image onmouseover and onmouseout events in JavaScript</h3><hr>
+        <img id="img_1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="images/1.jpg" alt="">
+    </div>
+
+    <div id="form" class="div_border">
+    <form onsubmit="return validate()" action="message.html">
+        <input type="text" id="uname" placeholder="username" >
+        <label id="lbluser1" style="color:red; visibility:hidden;">Invalid</label>
+        <br><br>
+          <input type="password" id="password" placeholder="password" >
+          <label id="lbluser2" style="color:red; visibility:hidden;">Invalid</label><br><br>
+            
+          <button type="submit">Submit</button>
+        
+    </form>
+    </div>
+    </section>
 </body>
 <script type="text/javascript" src="js/script.js"></script>
 </html>

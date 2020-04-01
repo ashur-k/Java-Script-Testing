@@ -33,6 +33,7 @@ input{
     font-family: Farro, Arial;
     font-size: 16px;
 }
-#section_1{
+#section_1, .section_class{
     display: flex;
 }
+
