@@ -56,12 +56,20 @@ function setOldImage(){
 function validate(){
     var username = document.getElementById("uname");
     var password = document.getElementById("password");
-
-    if(username.value.trim() == "" )
+    if (username.value.trim() == "" && password.value.trim() == ""){
+                alert("Blank Username and password");
+                username.style.border = "solid 3px red";
+                password.style.border = "solid 3px red";
+                document.getElementById("lbluser1").style.visibility="visible";
+                document.getElementById("lbluser2").style.visibility="visible";
+                return false;
+    }
+   
+    else if(username.value.trim() == "" )
       {
         alert("Blank Username");
         username.style.border = "solid 3px red";
-         document.getElementById("lbluser1").style.visibility="visible";
+        document.getElementById("lbluser1").style.visibility="visible";
         return false;
     } 
     else if (password.value.trim() == ""){
@@ -78,4 +86,17 @@ function validate(){
     else{
         true;
     }
+    }
+
+    function validate1(){
+            var username1 = document.getElementById("uname1").value;
+            // regular expressions are treated as an object in javascript
+            var regx = /[^*,/]00/i; // carrot sign is to exclude certai think
+           //this regx.test() is going to return bollean valur true or false
+            if (regx.test(username1)){
+                    alert("valid user name");
+            }
+            else {
+                alert ("invalid username");
+            }
     }

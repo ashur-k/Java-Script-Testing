@@ -65,17 +65,33 @@
         <img id="img_1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="images/1.jpg" alt="">
     </div>
 
+    <div class="inline-block">
     <div id="form" class="div_border">
     <form onsubmit="return validate()" action="message.html">
         <input type="text" id="uname" placeholder="username" >
-        <label id="lbluser1" style="color:red; visibility:hidden;">Invalid</label>
+        <label id="lbluser1" style="color:red; visibility:hidden;">Invalid Username</label>
         <br><br>
           <input type="password" id="password" placeholder="password" >
-          <label id="lbluser2" style="color:red; visibility:hidden;">Invalid</label><br><br>
+          <label id="lbluser2" style="color:red; visibility:hidden;">Invalid Password</label><br><br>
             
           <button type="submit">Submit</button>
         
     </form>
+    </div>
+
+     <div id="form" class="div_border">
+
+    <form action="message.html">
+      <input type="text" id="uname1" placeholder="username">
+      <label id="lbluser1" style="color:red; visibility:hidden;">Invalid Username</label>
+      <button type="button" onclick="validate1()" >Submit</button>
+      <p>Plesae enter username with E00</p>
+        
+    </form>
+    </div>
+
+
+    
     </div>
     </section>
 </body>
